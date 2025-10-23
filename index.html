@@ -1,0 +1,275 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kivu Stars - L'Autre Face du Kivu</title>
+    <!-- Chargement de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Configuration Tailwind pour les couleurs personnalisées et la police -->
+    <style>
+        :root {
+            --kivu-yellow: #ffc700; /* La couleur dominante de votre marque */
+        }
+        /* Utilisation de Poppins pour tout le corps */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'kivu-yellow': 'var(--kivu-yellow)',
+                        'kivu-black': '#000000',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-gray-800 bg-white">
+
+    <!-- En-tête (Header) -->
+    <header class="bg-kivu-black text-white p-4">
+        <div class="container mx-auto max-w-6xl flex flex-col items-center">
+            <h1 class="text-4xl font-extrabold tracking-widest uppercase text-white">KIVU STARS</h1>
+            <p class="text-lg italic text-kivu-yellow mt-1">L'autre face du Kivu</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Héro (Hero) -->
+        <section class="bg-gray-50 py-16 md:py-24">
+            <div class="container mx-auto max-w-6xl px-4 flex flex-col md:flex-row items-center justify-between gap-12">
+                
+                <!-- Contenu Textuel -->
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h2 class="text-4xl md:text-5xl font-bold text-kivu-black mb-6 leading-tight">
+                        Votre chaîne préférée pour les actualités, la musique et la culture
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Découvrez l'actualité en direct, les meilleurs programmes et replays de la région du Kivu, directement sur votre mobile.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                        <a href="#download" class="btn-primary">
+                            Télécharger l'Application
+                        </a>
+                        <a href="#features" class="btn-secondary">
+                            Voir les Émissions
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Maquette d'Application (Mockup) -->
+                <div class="md:w-1/2 flex justify-center">
+                    <!-- Cadre du téléphone -->
+                    <div class="w-72 h-[40rem] bg-kivu-black rounded-[2.5rem] p-2 shadow-2xl relative transition duration-500 ease-in-out hover:scale-105">
+                        <!-- Écran du téléphone -->
+                        <div class="w-full h-full bg-white rounded-3xl overflow-hidden">
+                            <!-- Image de la capture d'écran (L'URL est un placeholder visuel) -->
+                            <img 
+                                src="./cap/e.png" 
+                                alt="Capture d'écran de l'application mobile Kivu Stars - Écran d'accueil Live" 
+                                class="w-full h-full object-cover"
+                                onerror="this.onerror=null; this.src='https://placehold.co/300x533/ffc700/000000?text=KIVU+STARS+MOCKUP'"
+                            />
+                            <!-- NOTE: En production, remplacez le 'src' par l'URL de votre image 'Screenshot_20251023-235240.jpg' pour un rendu fidèle. -->
+                        </div>
+                        <!-- Encoche (Notch) -->
+                        <div class="absolute top-4 left-1/2 transform -translate-x-1/2 w-16 h-4 bg-kivu-black rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Fonctionnalités (Features) -->
+        <section id="features" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto max-w-6xl px-4 text-center">
+                <h3 class="text-3xl md:text-4xl font-bold text-kivu-black mb-12">Nos Points Forts</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <div class="feature-card">
+                        <i class="text-5xl mb-4 text-kivu-yellow">📰</i>
+                        <h4 class="text-xl font-bold text-kivu-black mb-2">Actualités en continu</h4>
+                        <p class="text-gray-600">Restez informé avec le Journal de la Mi-Journée et les flashs d'actualité, en direct du Kivu et du monde.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <i class="text-5xl mb-4 text-kivu-yellow">📻</i>
+                        <h4 class="text-xl font-bold text-kivu-black mb-2">Musique & Culture</h4>
+                        <p class="text-gray-600">Écoutez "Mélodies du Kivu" et découvrez les talents émergents avec la nouvelle émission "Go Up Stars".</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <i class="text-5xl mb-4 text-kivu-yellow">⚽</i>
+                        <h4 class="text-xl font-bold text-kivu-black mb-2">Sport & Débats</h4>
+                        <p class="text-gray-600">Suivez les analyses de "Kivu Sport Flash" et participez aux discussions citoyennes de "Débat Citoyen".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Téléchargement (Download) -->
+        <section id="download" class="bg-kivu-yellow py-16 md:py-20">
+            <div class="container mx-auto max-w-4xl px-4 text-center">
+                <h3 class="text-3xl md:text-4xl font-bold text-kivu-black mb-6">Téléchargez KIVU STARS</h3>
+                <p class="text-xl text-kivu-black mb-10">L'application est disponible gratuitement. Rejoignez des milliers d'utilisateurs aujourd'hui !</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-6">
+                    <!-- Google Play Button (Icone simplifiée) -->
+                    <a href="#" class="store-btn google-play-btn">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14h-1v-4H8.5V9.5h2v1h1V16zm5.5-2.5h-1v-2H13.5v-1h2v-2h1v5zm-5 0H11v-4h1.5v4z"/></svg>
+                        <span class="ml-3">Google Play</span>
+                    </a>
+                    <!-- App Store Button (Icone Apple simplifiée) -->
+                    <a href="#" class="store-btn app-store-btn">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 1.875c-.822 0-1.636.196-2.392.584C12.85 2.85 12.067 4 12 4c-.067 0-.85-.15-1.608-.541-.756-.388-1.57-.584-2.392-.584-2.454 0-4.43 2.072-4.43 4.625 0 2.553 1.976 4.625 4.43 4.625.822 0 1.636-.196 2.392-.584.756-.388 1.57-.541 2.392-.541s1.636.153 2.392.541c.756.388 1.57.584 2.392.584 2.454 0 4.43-2.072 4.43-4.625 0-2.553-1.976-4.625-4.43-4.625zM12 16.5c-4.142 0-7.5-3.41-7.5-7.625C4.5 4.75 7.858 1.34 12 1.34s7.5 3.41 7.5 7.625c0 4.215-3.358 7.535-7.5 7.535z"/></svg>
+                        <span class="ml-3">App Store</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nouvelle Section : Maquettes de l'Application (Screenshots) -->
+        <section id="screenshots" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto max-w-6xl px-4 text-center">
+                <h3 class="text-3xl md:text-4xl font-bold text-kivu-black mb-12">Aperçu de l'Application KIVU STARS</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <!-- Image 1: Splash/Logo (Screenshot_20251023-235233.png) -->
+                    <div class="shadow-xl rounded-lg overflow-hidden border-4 border-kivu-black hover:scale-105 transition-transform duration-300">
+                        <img 
+                            src="./cap/a.png" 
+                            alt="Capture d'écran de l'application - Écran de démarrage" 
+                            class="w-full h-auto object-cover"
+                            onerror="this.onerror=null; this.src='https://placehold.co/300x533/ffc700/000000?text=Screenshot+1'"
+                        />
+                        <!-- NOTE: Remplacer l'URL du 'src' par l'URL de votre image 'Screenshot_20251023-235233.png' -->
+                    </div>
+                    
+                    <!-- Image 2: Accueil Live (Screenshot_20251023-235240.jpg) -->
+                    <div class="shadow-xl rounded-lg overflow-hidden border-4 border-kivu-black hover:scale-105 transition-transform duration-300">
+                        <img 
+                            src="./cap/b.png" 
+                            alt="Capture d'écran de l'application - Écran d'accueil Live" 
+                            class="w-full h-auto object-cover"
+                            onerror="this.onerror=null; this.src='https://placehold.co/300x533/ffc700/000000?text=Screenshot+2'"
+                        />
+                         <!-- NOTE: Remplacer l'URL du 'src' par l'URL de votre image 'Screenshot_20251023-235240.jpg' -->
+                    </div>
+                    
+                    <!-- Image 3: Programme (Screenshot_20251023-235245.jpg) -->
+                    <div class="shadow-xl rounded-lg overflow-hidden border-4 border-kivu-black hover:scale-105 transition-transform duration-300">
+                        <img 
+                            src="./cap/c.png" 
+                            alt="Capture d'écran de l'application - Programme TV" 
+                            class="w-full h-auto object-cover"
+                            onerror="this.onerror=null; this.src='https://placehold.co/300x533/ffc700/000000?text=Screenshot+3'"
+                        />
+                         <!-- NOTE: Remplacer l'URL du 'src' par l'URL de votre image 'Screenshot_20251023-235245.jpg' -->
+                    </div>
+
+                    <!-- Image 4: Podcasts & Replays (Screenshot_20251023-235255.jpg) -->
+                    <div class="shadow-xl rounded-lg overflow-hidden border-4 border-kivu-black hover:scale-105 transition-transform duration-300">
+                        <img 
+                            src="./cap/d.png" 
+                            alt="Capture d'écran de l'application - Podcasts et Replays" 
+                            class="w-full h-auto object-cover"
+                            onerror="this.onerror=null; this.src='https://placehold.co/300x533/ffc700/000000?text=Screenshot+4'"
+                        />
+                         <!-- NOTE: Remplacer l'URL du 'src' par l'URL de votre image 'Screenshot_20251023-235255.jpg' -->
+                    </div>
+
+                    <!-- Image 5: Actualités/Émissions bas (Screenshot_20251023-235306.jpg) -->
+                    <div class="shadow-xl rounded-lg overflow-hidden border-4 border-kivu-black hover:scale-105 transition-transform duration-300">
+                        <img 
+                            src="./cap/a.png" 
+                            alt="Capture d'écran de l'application - Autres Actualités" 
+                            class="w-full h-auto object-cover"
+                            onerror="this.onerror=null; this.src='https://placehold.co/300x533/ffc700/000000?text=Screenshot+5'"
+                        />
+                         <!-- NOTE: Remplacer l'URL du 'src' par l'URL de votre image 'Screenshot_20251023-235306.jpg' -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de Page (Footer) -->
+    <footer class="bg-kivu-black text-white py-6">
+        <div class="container mx-auto max-w-6xl px-4 text-center">
+            <p class="text-sm">&copy; 2025 KIVU STARS. Tous droits réservés. | Conçu pour la communauté du Kivu.</p>
+        </div>
+    </footer>
+
+    <!-- Styles CSS personnalisés pour les boutons et cartes -->
+    <style>
+        .btn-primary {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 9999px; /* Fully rounded */
+            text-decoration: none;
+            font-weight: 700;
+            background-color: var(--kivu-yellow);
+            color: #000000;
+            border: 2px solid var(--kivu-yellow);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 199, 0, 0.4);
+        }
+        .btn-primary:hover {
+            background-color: #e5b300;
+            box-shadow: 0 6px 20px rgba(255, 199, 0, 0.6);
+            transform: translateY(-1px);
+        }
+        .btn-secondary {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 9999px; /* Fully rounded */
+            text-decoration: none;
+            font-weight: 700;
+            background-color: transparent;
+            color: #000000;
+            border: 2px solid #000000;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #000000;
+            color: var(--kivu-yellow);
+        }
+
+        .feature-card {
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            background-color: white;
+            /* Style inspiré de l'application */
+            border-left: 5px solid var(--kivu-yellow); 
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .store-btn {
+            display: flex;
+            align-items: center;
+            padding: 15px 35px;
+            border-radius: 9999px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            background-color: #000000;
+            color: var(--kivu-yellow);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        .store-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</body>
+</html>
